@@ -5,7 +5,7 @@ const queries = require('../queries')
 router.get('/', function(req, res, next) {
   queries.getBooks()
     .then((books) => {
-      res.json(projects)
+      res.json(books)
     })
     .catch(function (error){
       res.json({
