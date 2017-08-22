@@ -4,6 +4,9 @@ module.exports = {
   getBooks: function() {
     return knex('*').from('book')
   },
+  getAuthors: function(){
+    return knex('*').from('author')
+  },
   getBookById: function(book_id) {
     return knex('book')
       .select('*')
